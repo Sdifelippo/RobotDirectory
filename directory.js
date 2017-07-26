@@ -8,16 +8,17 @@ app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
-app.get('/individual_Robot', function(request, response){
-  response.render('individual_Robot', { robotdata: robotMembers.users });
+app.use(express.static('public'));
+app.get('/solorobots', function(request, response){
+  response.render('solorobots', { robotdata: robotMembers.users });
 });
 
-app.get('/robot_data', function(request, response){
-  response.render('robot_data', { robotdata: robotMembers.users });
+app.get('/robotdirectory', function(request, response){
+  response.render('robotdirectory', { robotdata: robotMembers.users });
 });
 
 
-app.get('/robot_data/:name', function(request, response){
+app.get('/solorobots/:name', function(request, response){
   let person = robotMembers.find(function(member) {
     return member.name.toLowerCase() === request.params.name;
   })
@@ -27,3 +28,4 @@ app.get('/robot_data/:name', function(request, response){
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
+})

@@ -1,7 +1,6 @@
 {
   "name": "robodirectory",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,19 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
-    "mustache": "^2.3.0"
-  }
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sdifelippo/RobotDirectory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sdifelippo/RobotDirectory/issues"
+  },
+  "homepage": "https://github.com/Sdifelippo/RobotDirectory#readme",
+  "description": ""
 }

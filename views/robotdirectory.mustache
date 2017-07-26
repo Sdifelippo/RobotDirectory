@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Staff</title>
+  <link rel="stylesheet" href="/robot.css"/>
+  <title> Robot Staff</title>
 
 </head>
 
@@ -12,6 +13,9 @@
 
   <div class="alldata">
     {{ #robotdata }}
+
+    <a href="http://localhost:3000/individual_Robot/{{name}}">
+      <img class="Avatars" src="{{avatar}}" alt="{{name}}"></a>
     <p>{{address.city}}, {{address.country}}</p>
     <p> {{#job}}
           {{ job }}
@@ -23,6 +27,7 @@
       <p class="robotEmail">{{email}}</p>
       <p class="robotPhone">{{phone}}</p>
     {{ /robotdata }}
+  
   </div>
 
 </body>

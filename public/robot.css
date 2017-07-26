@@ -1,0 +1,25 @@
+.wrapper{
+  border-style: solid;
+border-width: thin;
+display: inline-block;
+width: 15rem;
+height: auto;
+border-color: grey;
+margin-bottom: 2rem;
+}
+.robotName{
+  color: #2666c7;
+  font-size: medium;
+}
+p{
+  font-size: x-small;
+}
+.alldata{
+  border-style: solid;
+border-width: thin;
+display: inline-block;
+width: 15rem;
+height: auto;
+border-color: grey;
+margin-bottom: 2rem;
+}
