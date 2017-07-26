@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RobotDirectory</title>
+  </head>
+  <body>
+    <h1>This is my robot staff</h1>
+
+    <p>There are {{ data.length}} staff members</p>
+    <div>
+      {{ #data }}
+      <img src="{{ avatar }}">
+      <p>{{ name }}, {{ job }}, {{ company }}</p>
+     {{ /data }}
+   </div>
+
+  </body>
+</html>
