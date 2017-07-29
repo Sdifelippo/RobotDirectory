@@ -8,11 +8,11 @@
 </head>
 
 <body>
-  <h1 class="header">Robots Looking for Work</h1>
+  <h1 class="header">Robot Profile</h1>
   <div class = "needwrapper">
     {{ #staff }}
     <div class="upper">
-      <div><img src="{{ avatar }}" class="needphoto"></div>
+      <div><img src="{{ avatar }}" class="helpphoto"></div>
       <div class="info">
         <span><h1>{{ name }}</h1></span>
         <span><p>{{ #address.city }}{{ address.city }},{{ /address.city }} {{ address.country }} | {{ #job }} {{ job }}, {{ /job }} {{ ^job }} <span class= "available"> Available for hire</span>{{ /job }} {{ company }}</p></span>
@@ -26,7 +26,7 @@
       <h4>Skills</h4>
     </span>
     </div>
-    <div class="attributes">
+    <div class="skills">
       <p>{{ university }}</p>
       {{ #skills }}
       <ul>

@@ -54,12 +54,12 @@ h2 {
   color: red;
 }
 
-.photo {
+.helpphoto {
   display: flex;
   justify-content: center;
 }
 
-.needphoto {
+.helpphoto {
   display: flex;
   border: 1px solid grey;
   border-radius: 50%;
@@ -76,6 +76,6 @@ li {
   list-style: none;
 }
 
-.attributes {
+.skills {
   padding-top: 5px;
 }
