@@ -3,31 +3,27 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/robot.css"/>
-  <title> Robot Staff</title>
-
+  <title>Robot Directory</title>
+  <link rel="stylesheet" href="robot.css"/>
 </head>
 
 <body>
-  <h1>Second page</h1>
+  <h1 class="header">Index of Robots</h1>
 
-  <div class="alldata">
-    {{ #robotdata }}
+  <div class = "wrap">
+      {{ #staff }}
+      <div class="profile">
+        <a href="/{{ username }}"/>
+        <div class = "photo">
+          <img src="{{ avatar }}">
+        </div>
+        <h2>{{ name }}</h2>
+        <p>{{ #job }} {{ job }}, {{ /job }}
+          {{ ^job }}<p class = "available">Available for hire</p>{{ /job }}
+          {{ company }}</p>
+        </div></a>
+      {{ /staff }}
 
-    <a href="http://localhost:3000/individual_Robot/{{name}}">
-      <img class="Avatars" src="{{avatar}}" alt="{{name}}"></a>
-    <p>{{address.city}}, {{address.country}}</p>
-    <p> {{#job}}
-          {{ job }}
-          {{ /job }}
-          {{ ^job }}
-          <p class="available">Available for hire</p>
-          {{/job}}</p>
-      <p class="robotCompany">{{company}}</p>
-      <p class="robotEmail">{{email}}</p>
-      <p class="robotPhone">{{phone}}</p>
-    {{ /robotdata }}
-  
   </div>
 
 </body>
